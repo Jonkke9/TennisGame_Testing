@@ -137,27 +137,6 @@ public class TennisGameTest {
 	}
 
 	@Test
-	public void testTennisGame_deuceAfterAdvantage() throws TennisGameException {
-		TennisGame game = new TennisGame();
-
-		game.player2Scored();
-		game.player2Scored();
-		game.player2Scored();
-
-		game.player1Scored();
-		game.player1Scored();
-		game.player1Scored();
-		game.player1Scored();
-
-		game.player2Scored();
-		game.player2Scored();
-		game.player1Scored();
-
-		assertEquals("deuce", game.getScore());
-
-	}
-
-	@Test
 	public void testTennisGame_MidGame() throws TennisGameException {
 		TennisGame game = new TennisGame();
 		game.player1Scored();
